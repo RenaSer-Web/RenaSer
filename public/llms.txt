@@ -1,0 +1,39 @@
+# Rena.Ser — Terapia Colónica y Tratamientos Depurativos
+
+> Centro de hidroterapia colónica (terapia colónica) y tratamientos depurativos en Acassuso, San Isidro, Zona Norte de Buenos Aires, Argentina. Tratamientos indoloros, seguros y profesionales para mejorar la digestión, aumentar la energía, reforzar las defensas y desintoxicar el organismo. Atiende el terapeuta colónico Maximiliano Quinta (Matrícula Nro 32), miembro de la Asociación de Hidroterapia Colónica de la Región Sur.
+
+## Datos del negocio (NAP)
+
+- **Nombre:** Rena.Ser
+- **Rubro:** Hidroterapia colónica / Tratamientos depurativos / Salud y bienestar
+- **Dirección:** Carlos Pellegrini 1022, Acassuso (San Isidro), Provincia de Buenos Aires, Argentina
+- **Zona de cobertura:** Acassuso, San Isidro, Martínez, Olivos, Vicente López, Beccar, Zona Norte y CABA
+- **Teléfono / WhatsApp:** +54 9 11 5579 1560
+- **Email:** renaserterapiacolonica@gmail.com
+- **Horarios:** Lunes a viernes de 9 a 19 h; sábados de 9 a 13 h (con turno previo)
+- **Profesional a cargo:** Maximiliano Quinta — Terapeuta Colónico, Matrícula Nro 32
+
+## Tratamientos
+
+- **Terapia Colónica (Sesión Descubrimiento):** primera sesión de hidroterapia de colon para desintoxicar, mejorar la digestión y aumentar la energía. Recomendada como mantenimiento cada 2–3 meses. /terapia-colonica/
+- **Terapia Colónica Profunda (Limpieza Profunda):** paquete de 3 sesiones, ideal en días consecutivos, para una desintoxicación completa del sistema digestivo. /limpieza-colonica/
+- **Limpieza Hepática:** programa de 10 días con 3 sesiones de hidroterapia colónica para eliminar cálculos biliares y toxinas, y mejorar la función del hígado, la vesícula, el páncreas, los riñones y el colon. /limpieza-hepatica/
+- **Tratamiento Desparasitante Natural:** programa de 1 mes que combina terapia colónica, tinturas madre orgánicas y orientación alimentaria; efectivo contra más de cien parásitos, sin efectos secundarios. /tratamiento-desparasitante/
+- **Detox de Luna Llena:** programa online de 3 días de ayuno a base de jugos naturales, con encuentros grupales por Zoom y 3 niveles de intensidad. /detox-de-luna-llena/
+
+## Información clave
+
+- La hidroterapia colónica es **indolora**: el agua se introduce a baja presión y a temperatura corporal.
+- Es un **método seguro**: se utiliza material descartable de un solo uso y se esteriliza el consultorio tras cada sesión.
+- A diferencia de los laxantes, **no genera hábito** y mejora la tonicidad de la pared muscular del colon.
+- Cada sesión dura **aproximadamente una hora**.
+- **Contraindicaciones** principales: embarazo, hemorroides de grado avanzado con sangrado, diverticulitis, enfermedad de Crohn, colitis ulcerosa, cardiopatías severas, cirrosis o cirugía/radioterapia abdominal o rectal reciente. Ante dudas, se recomienda consulta previa.
+
+## Enlaces
+
+- Inicio: /
+- Tratamientos: /tratamientos/
+- Beneficios: /beneficios/
+- Preguntas frecuentes: /faq/
+- Historia: /historia/
+- Contacto y turnos: /contacto/
