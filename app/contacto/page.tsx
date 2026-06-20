@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { business, therapist } from "@/lib/site";
+import { business } from "@/lib/site";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { ContactForm } from "@/components/contact-form";
 import { WhatsAppCta, CallCta } from "@/components/cta";
 import { MapEmbed } from "@/components/sections";
-import { MapPin, Mail, Phone, Clock } from "@/components/icons";
+import { MapPin, Mail, Phone } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Contacto y Turnos",
@@ -62,73 +62,58 @@ export default function ContactoPage() {
       </section>
 
       <section className="container-rs py-16">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
-          <div>
-            <h2 className="font-display text-2xl text-[var(--color-forest)]">Datos de contacto</h2>
-            <ul className="mt-6 space-y-5">
-              <li className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
-                  <MapPin width={22} height={22} />
-                </span>
-                <div>
-                  <p className="font-semibold text-[var(--color-forest)]">Ubicación</p>
-                  <a href={business.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
-                    {business.address.street} ({business.address.neighborhood})<br />
-                    {business.address.locality}, {business.address.region}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
-                  <Phone width={22} height={22} />
-                </span>
-                <div>
-                  <p className="font-semibold text-[var(--color-forest)]">Teléfono / WhatsApp</p>
-                  <a href={business.whatsapp} target="_blank" rel="noopener noreferrer" className="text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
-                    {business.phoneDisplay}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
-                  <Mail width={22} height={22} />
-                </span>
-                <div>
-                  <p className="font-semibold text-[var(--color-forest)]">Correo electrónico</p>
-                  <a href={`mailto:${business.email}`} className="break-all text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
-                    {business.email}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
-                  <Clock width={22} height={22} />
-                </span>
-                <div>
-                  <p className="font-semibold text-[var(--color-forest)]">Horarios</p>
-                  <p className="text-[var(--color-ink-soft)]">
-                    Lunes a viernes de 9 a 19 h<br />
-                    Sábados de 9 a 13 h · con turno previo
-                  </p>
-                </div>
-              </li>
-            </ul>
+        <div className="container-rs px-0">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            <div>
+              <h2 className="font-display text-2xl text-[var(--color-forest)]">Datos de contacto</h2>
+              <ul className="mt-6 space-y-5">
+                <li className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
+                    <MapPin width={22} height={22} />
+                  </span>
+                  <div>
+                    <p className="font-semibold text-[var(--color-forest)]">Ubicación</p>
+                    <a href={business.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
+                      {business.address.street} ({business.address.neighborhood})<br />
+                      {business.address.locality}, {business.address.region}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
+                    <Phone width={22} height={22} />
+                  </span>
+                  <div>
+                    <p className="font-semibold text-[var(--color-forest)]">Teléfono / WhatsApp</p>
+                    <a href={business.whatsapp} target="_blank" rel="noopener noreferrer" className="text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
+                      {business.phoneDisplay}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-mist)] text-[var(--color-pine)]">
+                    <Mail width={22} height={22} />
+                  </span>
+                  <div>
+                    <p className="font-semibold text-[var(--color-forest)]">Correo electrónico</p>
+                    <a href={`mailto:${business.email}`} className="break-all text-[var(--color-ink-soft)] transition hover:text-[var(--color-forest)]">
+                      {business.email}
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-            <p className="mt-6 text-sm text-[var(--color-ink-soft)]">
-              Atiende <strong>{therapist.name}</strong> · {therapist.jobTitle} ·{" "}
-              {therapist.license}.
-            </p>
-
-            <div className="mt-8">
-              <MapEmbed url={business.mapsEmbed} />
+            <div>
+              <h2 className="mb-6 font-display text-2xl text-[var(--color-forest)]">
+                Dejanos tu consulta
+              </h2>
+              <ContactForm />
             </div>
           </div>
 
-          <div>
-            <h2 className="mb-6 font-display text-2xl text-[var(--color-forest)]">
-              Dejanos tu consulta
-            </h2>
-            <ContactForm />
+          <div className="mt-12 h-[380px]">
+            <MapEmbed url={business.mapsEmbed} />
           </div>
         </div>
       </section>

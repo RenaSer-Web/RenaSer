@@ -5,6 +5,7 @@ import { business, therapist, trustBadges, testimonials } from "@/lib/site";
 import { ContactForm } from "./contact-form";
 import { WhatsAppCta, CallCta } from "./cta";
 import { Check, Drop, Star, ArrowRight, iconMap } from "./icons";
+import { GoogleReviewCard } from "@/components/sections";
 
 /**
  * Landing de tratamiento optimizada para Google Ads:
@@ -21,7 +22,7 @@ export function TreatmentLanding({ t }: { t: Treatment }) {
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-[var(--color-sage-soft)] opacity-40 blur-3xl" />
         <div className="container-rs relative grid items-start gap-10 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:py-16">
           {/* Columna de copy */}
-          <div className="reveal order-2 lg:order-1">
+          <div className="reveal">
             <nav aria-label="Migas" className="mb-5 text-xs font-medium text-[var(--color-sage)]">
               <Link href="/" className="hover:text-[var(--color-forest)]">Inicio</Link>
               <span className="mx-1.5">/</span>
@@ -67,7 +68,7 @@ export function TreatmentLanding({ t }: { t: Treatment }) {
           </div>
 
           {/* Columna del formulario (above the fold) */}
-          <div className="reveal order-1 lg:order-2 lg:sticky lg:top-24" style={{ animationDelay: "0.1s" }}>
+          <div className="reveal lg:sticky lg:top-24" style={{ animationDelay: "0.1s" }}>
             <div className="mb-3 flex items-center justify-center gap-2 text-amber-500">
               {[0, 1, 2, 3, 4].map((i) => (
                 <Star key={i} width={18} height={18} />
@@ -176,19 +177,7 @@ export function TreatmentLanding({ t }: { t: Treatment }) {
           </h2>
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((rev) => (
-              <figure key={rev.name} className="rounded-2xl border border-[var(--color-line)] bg-white p-5 shadow-[var(--shadow-soft)]">
-                <div className="flex gap-0.5 text-amber-500">
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <Star key={i} width={15} height={15} />
-                  ))}
-                </div>
-                <blockquote className="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                  “{rev.text}”
-                </blockquote>
-                <figcaption className="mt-3 text-sm font-semibold text-[var(--color-forest)]">
-                  {rev.name}
-                </figcaption>
-              </figure>
+              <GoogleReviewCard key={rev.name} name={rev.name} text={rev.text} />
             ))}
           </div>
         </div>

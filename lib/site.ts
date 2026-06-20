@@ -66,12 +66,17 @@ export const business = {
 export const therapist = {
   name: "Maximiliano Quinta",
   jobTitle: "Terapeuta Colónico",
-  license: "Matrícula Nro 32",
-  memberOf: "Asociación de Hidroterapia Colónica de la Región Sur",
-  photo:
-    "https://renaserhidroterapia.com/wp-content/uploads/2022/08/maximiliano-quintas.jpg",
-  certificate:
-    "https://renaserhidroterapia.com/wp-content/uploads/2022/08/certificado-maximiliano-quinta.jpg",
+  license: "Matrícula N.º 32",
+  memberOf: "Asociación de Terapeutas Colónicos de la Región Sur y Asesor Nutricional formado en IATENA",
+  photo: "/maximiliano.png",
+  certificate: "/certificado-maximiliano-quinta.jpg",
+} as const;
+
+export const cotherapist = {
+  name: "María Belén Fernández",
+  jobTitle: "Co-terapeuta",
+  license: "Terapeuta Colónica, Biodecodificación Emocional y Consteladora Familiar",
+  photo: "/belen.png",
 } as const;
 
 export type TreatmentSlug =
@@ -123,9 +128,9 @@ export const treatments: Treatment[] = [
       "desintoxicación colon Zona Norte",
     ],
     image:
-      "https://renaserhidroterapia.com/wp-content/uploads/2024/10/depositphotos_55571087-stock-photo-male-urinary-system.webp",
+      "/terapia-colonica-sistema-digestivo.webp",
     imageAlt:
-      "Ilustración del sistema digestivo para terapia colónica en Rena.Ser, Acassuso",
+      "Ilustración anatómica del sistema digestivo e intestinos para la terapia colónica en Rena.Ser, Acassuso",
     heroHeadline: "Terapia Colónica: tu primera sesión para sentirte liviano y con energía",
     highlights: [
       "Sesión ideal para experimentar la hidroterapia colónica por primera vez",
@@ -157,9 +162,9 @@ export const treatments: Treatment[] = [
       "hidroterapia colónica Zona Norte",
     ],
     image:
-      "https://renaserhidroterapia.com/wp-content/uploads/2024/10/depositphotos_54368809-stock-photo-large-intestine.webp",
+      "/limpieza-colonica-intestino.webp",
     imageAlt:
-      "Ilustración del intestino grueso para la limpieza colónica profunda de Rena.Ser",
+      "Ilustración médica detallada del intestino grueso e hidroterapia de colon en Rena.Ser",
     heroHeadline: "Limpieza Colónica Profunda: 3 sesiones para una desintoxicación real",
     highlights: [
       "Paquete de 3 sesiones colónicas para una limpieza completa del sistema digestivo",
@@ -202,8 +207,8 @@ export const treatments: Treatment[] = [
       "limpieza hígado y vesícula",
     ],
     image:
-      "https://renaserhidroterapia.com/wp-content/uploads/2024/10/bigstock-image-of-a-woman-in-a-white-dr-351283526-1024x681.jpeg",
-    imageAlt: "Mujer relajada representando el bienestar tras la limpieza hepática en Rena.Ser",
+      "/limpieza-hepatica-bienestar.jpg",
+    imageAlt: "Mujer disfrutando del bienestar y la vitalidad tras completar el tratamiento de limpieza hepática profunda en Rena.Ser",
     heroHeadline: "Limpieza Hepática: depurá tu hígado y recuperá tu energía",
     highlights: [
       "Programa de 10 días con 3 sesiones de hidroterapia colónica (2 previas y 1 posterior)",
@@ -261,8 +266,9 @@ export const treatments: Treatment[] = [
       "desparasitación y terapia colónica",
     ],
     image:
-      "https://renaserhidroterapia.com/wp-content/uploads/2024/10/Call_to_Actions1-1024x221.jpg",
-    imageAlt: "Plantas medicinales utilizadas en el tratamiento desparasitante natural de Rena.Ser",
+      "/desparasitacion-natural-intestino.jpg",
+    imageAlt:
+      "Ilustración tridimensional del tracto digestivo e intestinos para el tratamiento desparasitante natural en Rena.Ser",
     heroHeadline: "Desparasitación Natural: un programa de 1 mes con plantas medicinales",
     highlights: [
       "Programa de 1 mes que combina terapia colónica y tinturas madre orgánicas",
@@ -305,8 +311,8 @@ export const treatments: Treatment[] = [
       "depuración con jugos verdes",
     ],
     image:
-      "https://renaserhidroterapia.com/wp-content/uploads/2024/10/Call_to_Actions1-1024x221.jpg",
-    imageAlt: "Jugos naturales del programa Detox de Luna Llena de Rena.Ser",
+      "/jugos-naturales-detox-luna-llena.jpg",
+    imageAlt: "Variedad de jugos naturales, frutas frescas y batidos saludables para el programa depurativo Detox de Luna Llena de Rena.Ser",
     heroHeadline: "Detox de Luna Llena: 3 días para recalibrar cuerpo, mente y energía",
     highlights: [
       "Programa online de 3 días de ayuno a base de jugos naturales",

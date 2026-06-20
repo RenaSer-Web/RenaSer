@@ -59,27 +59,54 @@ export default function FaqPage() {
       </section>
 
       <section className="container-rs py-16">
-        <div className="mx-auto max-w-3xl space-y-3">
-          {faqs.map((f, i) => (
-            <details
-              key={i}
-              className="group rounded-2xl border border-[var(--color-line)] bg-white px-5 shadow-[var(--shadow-soft)] open:border-[var(--color-sage)] [&_summary::-webkit-details-marker]:hidden"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display text-lg text-[var(--color-forest)]">
-                {f.q}
-                <ChevronDown
-                  width={20}
-                  height={20}
-                  className="shrink-0 text-[var(--color-gold-deep)] transition-transform duration-300 group-open:rotate-180"
-                />
-              </summary>
-              <div className="space-y-3 pb-5 text-[var(--color-ink-soft)]">
-                {f.a.map((p, j) => (
-                  <p key={j}>{p}</p>
-                ))}
-              </div>
-            </details>
-          ))}
+        <div className="mx-auto max-w-5xl grid gap-4 md:grid-cols-2 items-start">
+          {/* Columna 1 */}
+          <div className="space-y-3">
+            {faqs.slice(0, Math.ceil(faqs.length / 2)).map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-2xl border border-[var(--color-line)] bg-white px-5 shadow-[var(--shadow-soft)] open:border-[var(--color-sage)] [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display text-lg text-[var(--color-forest)]">
+                  {f.q}
+                  <ChevronDown
+                    width={20}
+                    height={20}
+                    className="shrink-0 text-[var(--color-gold-deep)] transition-transform duration-300 group-open:rotate-180"
+                  />
+                </summary>
+                <div className="space-y-3 pb-5 text-[var(--color-ink-soft)]">
+                  {f.a.map((p, j) => (
+                    <p key={j}>{p}</p>
+                  ))}
+                </div>
+              </details>
+            ))}
+          </div>
+
+          {/* Columna 2 */}
+          <div className="space-y-3">
+            {faqs.slice(Math.ceil(faqs.length / 2)).map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-2xl border border-[var(--color-line)] bg-white px-5 shadow-[var(--shadow-soft)] open:border-[var(--color-sage)] [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display text-lg text-[var(--color-forest)]">
+                  {f.q}
+                  <ChevronDown
+                    width={20}
+                    height={20}
+                    className="shrink-0 text-[var(--color-gold-deep)] transition-transform duration-300 group-open:rotate-180"
+                  />
+                </summary>
+                <div className="space-y-3 pb-5 text-[var(--color-ink-soft)]">
+                  {f.a.map((p, j) => (
+                    <p key={j}>{p}</p>
+                  ))}
+                </div>
+              </details>
+            ))}
+          </div>
         </div>
 
         <div className="mx-auto mt-12 max-w-3xl rounded-[var(--radius-xl2)] border border-[var(--color-line)] bg-[var(--color-cream-2)] p-8 text-center">

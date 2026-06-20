@@ -35,11 +35,11 @@ export function ContactForm({
     const email = String(data.get("email") || "").trim();
     const mensaje = String(data.get("mensaje") || "").trim();
 
-    if (!nombre || !telefono) {
-      setError("Por favor completá al menos tu nombre y teléfono.");
+    if (!nombre || !telefono || !email || !mensaje) {
+      setError("Por favor completá todos los campos.");
       return;
     }
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("El correo electrónico no parece válido.");
       return;
     }
@@ -134,9 +134,9 @@ export function ContactForm({
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-[var(--color-ink-soft)]">
-            Correo electrónico <span className="font-normal text-[var(--color-sage)]">(opcional)</span>
+            Correo electrónico
           </label>
-          <input id="email" name="email" type="email" autoComplete="email" className={fieldCls} placeholder="tucorreo@ejemplo.com" />
+          <input id="email" name="email" type="email" required autoComplete="email" className={fieldCls} placeholder="tucorreo@ejemplo.com" />
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="mensaje" className="mb-1.5 block text-sm font-semibold text-[var(--color-ink-soft)]">
@@ -145,6 +145,7 @@ export function ContactForm({
           <textarea
             id="mensaje"
             name="mensaje"
+            required
             rows={4}
             className={fieldCls}
             placeholder={
