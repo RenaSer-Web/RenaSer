@@ -12,24 +12,23 @@ interface Lead {
   treatment?: string;
 }
 
-// Configuración SMTP de Gmail desde variables de entorno
-const smtpUser = process.env.SMTP_USER;
-const smtpPass = process.env.SMTP_PASS;
-const EMAIL_TO = process.env.EMAIL_TO || "gestionimpulsodigital@gmail.com";
-
-// Creamos el transportador de correo si las credenciales existen
-const transporter =
-  smtpUser && smtpPass
-    ? nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: smtpUser,
-          pass: smtpPass,
-        },
-      })
-    : null;
-
 export async function POST(request: Request) {
+  // Configuración SMTP de Gmail desde variables de entorno (leídas dinámicamente)
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+  const EMAIL_TO = process.env.EMAIL_TO || "gestionimpulsodigital@gmail.com";
+
+  // Creamos el transportador de correo si las credenciales existen
+  const transporter =
+    smtpUser && smtpPass
+      ? nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: smtpUser,
+            pass: smtpPass,
+          },
+        })
+      : null;
   let data: Lead;
   try {
     data = (await request.json()) as Lead;
