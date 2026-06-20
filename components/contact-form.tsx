@@ -25,7 +25,7 @@ export function ContactForm({
     const data = new FormData(form);
 
     // Honeypot anti-spam: si está completo, descartamos en silencio.
-    if (data.get("company")) {
+    if (data.get("b_honey")) {
       setStatus("ok");
       return;
     }
@@ -112,7 +112,7 @@ export function ContactForm({
       {/* Honeypot oculto */}
       <input
         type="text"
-        name="company"
+        name="b_honey"
         tabIndex={-1}
         autoComplete="off"
         className="absolute -left-[9999px] h-0 w-0 opacity-0"

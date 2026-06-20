@@ -82,9 +82,17 @@ export async function POST(request: Request) {
       console.log(`[email] Correo enviado exitosamente via Gmail a ${EMAIL_TO}`);
     } catch (err) {
       console.error("[email] Error al enviar el correo con Gmail SMTP:", err);
+      return NextResponse.json(
+        { ok: false, error: "Error al enviar el correo a través de SMTP" },
+        { status: 500 }
+      );
     }
   } else {
     console.warn("[email] Gmail SMTP no está configurado. Por favor, definí SMTP_USER y SMTP_PASS en tu archivo .env");
+    return NextResponse.json(
+      { ok: false, error: "Servicio de correo no configurado" },
+      { status: 500 }
+    );
   }
 
   return NextResponse.json({ ok: true });
