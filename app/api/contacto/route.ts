@@ -14,9 +14,9 @@ interface Lead {
 
 export async function POST(request: Request) {
   // Configuración SMTP de Gmail desde variables de entorno (leídas dinámicamente)
-  const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
-  const EMAIL_TO = process.env.EMAIL_TO || "gestionimpulsodigital@gmail.com";
+  const smtpUser = process.env.SMTP_USER || process.env.GMAIL_USER;
+  const smtpPass = process.env.SMTP_PASS || process.env.GMAIL_APP_PASSWORD;
+  const EMAIL_TO = process.env.EMAIL_TO || process.env.GMAIL_USER || "gestionimpulsodigital@gmail.com";
 
   // Creamos el transportador de correo si las credenciales existen
   const transporter =
@@ -70,6 +70,7 @@ export async function POST(request: Request) {
       await transporter.sendMail({
         from: `"Rena.Ser Web" <${smtpUser}>`,
         to: EMAIL_TO,
+        replyTo: email,
         subject: `Nuevo lead web Rena.Ser — ${data.treatment ?? "general"}`,
         text: `Se ha recibido una nueva consulta desde el sitio web:\n\n` +
               `Nombre: ${nombre}\n` +
