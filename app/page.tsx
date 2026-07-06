@@ -61,8 +61,8 @@ export default function HomePage() {
           <div className="reveal relative" style={{ animationDelay: "0.12s" }}>
             <div className="overflow-hidden rounded-[var(--radius-xl2)] border-4 border-white shadow-[var(--shadow-card)]">
               <Image
-                src="/hero_wellness.png"
-                alt="Consultorio holístico de terapia colónica y bienestar en Rena.Ser, Acassuso"
+                src="/terapia-colonica-agua.jpg"
+                alt="Gota de agua cayendo y creando ondas en la superficie, representando la purificación e hidroterapia de colon en Rena.Ser, Acassuso"
                 width={720}
                 height={820}
                 priority
