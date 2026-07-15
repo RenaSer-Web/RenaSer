@@ -11,7 +11,7 @@ import { WhatsAppFloat } from "@/components/cta";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Rena.Ser | Terapia Colónica y Tratamientos Depurativos en Acassuso",
+    default: "Rena.Ser | Terapia Colónica y Tratamientos Depurativos en Olivos",
     template: "%s | Rena.Ser",
   },
   description: business.description,
@@ -26,10 +26,12 @@ export const metadata: Metadata = {
     "limpieza hepática",
     "desparasitación natural",
     "detox",
-    "Acassuso",
-    "San Isidro",
+    "Olivos",
+    "Vicente López",
     "Zona Norte",
     "Buenos Aires",
+    "Acassuso",
+    "San Isidro",
   ],
   alternates: { canonical: "/" },
   robots: {

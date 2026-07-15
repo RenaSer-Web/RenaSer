@@ -22,7 +22,7 @@ export function Footer() {
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-[var(--color-sage-soft)]">
             {business.tagline}. Hidroterapia colónica indolora, segura y profesional en
-            Acassuso, Zona Norte de Buenos Aires.
+            Olivos, Zona Norte de Buenos Aires.
           </p>
           <div className="mt-6">
             <WhatsAppCta className="btn btn-wa !py-2.5 text-sm" source="footer">

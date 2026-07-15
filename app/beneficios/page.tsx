@@ -9,7 +9,7 @@ import { Drop, Shield, Leaf, Sparkle } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Beneficios de la Terapia Colónica",
   description:
-    "Descubrí los beneficios de la hidroterapia colónica: mejor digestión, más energía, defensas reforzadas, bienestar emocional y desintoxicación. Tratamiento indoloro y seguro en Acassuso, San Isidro.",
+    "Descubrí los beneficios de la hidroterapia colónica: mejor digestión, más energía, defensas reforzadas, bienestar emocional y desintoxicación. Tratamiento indoloro y seguro en Olivos, Vicente López.",
   keywords: [
     "beneficios terapia colónica",
     "beneficios hidroterapia de colon",

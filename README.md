@@ -1,7 +1,7 @@
 # Rena.Ser — Sitio web (Next.js)
 
 Rebuild del sitio de **Rena.Ser — Terapia Colónica y Tratamientos Depurativos**
-(Acassuso, San Isidro, Zona Norte de Buenos Aires) sobre **Next.js 16** con App
+(Olivos, Vicente López, Zona Norte de Buenos Aires) sobre **Next.js 16** con App
 Router, TypeScript y Tailwind CSS v4. Incluye SEO técnico, datos estructurados
 (JSON-LD), optimización para motores generativos (GEO) y landings de tratamientos
 orientadas a Google Ads con el formulario arriba y seguimiento de conversiones..

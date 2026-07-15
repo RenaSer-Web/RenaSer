@@ -10,9 +10,9 @@ import { TreatmentsGrid, Stats, BenefitsList, MapEmbed, CertificateCard, GoogleR
 import { ArrowRight, Star, MapPin, Mail, Phone, iconMap, Check } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Rena.Ser | Terapia Colónica y Tratamientos Depurativos en Acassuso",
+  title: "Rena.Ser | Terapia Colónica y Tratamientos Depurativos en Olivos",
   description:
-    "Decile adiós a los problemas digestivos con la hidroterapia colónica. Terapia colónica indolora y segura en Acassuso, San Isidro (Zona Norte, Buenos Aires). Asesoría gratuita: pedí tu turno.",
+    "Decile adiós a los problemas digestivos con la hidroterapia colónica. Terapia colónica indolora y segura en Olivos, Vicente López (Zona Norte, Buenos Aires). Asesoría gratuita: pedí tu turno.",
   alternates: { canonical: "/" },
 };
 
@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="reveal">
             <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-sage-soft)] bg-white/60 px-4 py-1.5 text-xs font-semibold text-[var(--color-pine)]">
               <span className="h-2 w-2 rounded-full bg-[var(--color-gold)]" />
-              Hidroterapia colónica · Acassuso, Zona Norte
+              Hidroterapia colónica · Olivos, Zona Norte
             </span>
             <h1 className="mt-5 text-[2.6rem] font-semibold leading-[1.03] text-[var(--color-forest)] sm:text-6xl">
               Decile adiós a los problemas digestivos con la{" "}
@@ -62,7 +62,7 @@ export default function HomePage() {
             <div className="overflow-hidden rounded-[var(--radius-xl2)] border-4 border-white shadow-[var(--shadow-card)]">
               <Image
                 src="/terapia-colonica-agua.jpg"
-                alt="Gota de agua cayendo y creando ondas en la superficie, representando la purificación e hidroterapia de colon en Rena.Ser, Acassuso"
+                alt="Gota de agua cayendo y creando ondas en la superficie, representando la purificación e hidroterapia de colon en Rena.Ser, Olivos"
                 width={720}
                 height={820}
                 priority

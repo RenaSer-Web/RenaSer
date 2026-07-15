@@ -18,7 +18,7 @@ export const business = {
   legalName: "Rena.Ser — Terapia Colónica y Tratamientos Depurativos",
   tagline: "Terapia Colónica y Tratamientos Depurativos",
   description:
-    "Centro de hidroterapia colónica y tratamientos depurativos en Acassuso, San Isidro (Zona Norte, Buenos Aires). Terapia colónica indolora, segura y profesional para mejorar tu digestión, energía y bienestar.",
+    "Centro de hidroterapia colónica y tratamientos depurativos en Olivos, Vicente López (Zona Norte, Buenos Aires). Terapia colónica indolora, segura y profesional para mejorar tu digestión, energía y bienestar.",
   // Contacto
   phoneDisplay: "+54 9 11 5579 1560",
   phoneE164: "+5491155791560",
@@ -26,21 +26,20 @@ export const business = {
   email: "renaserterapiacolonica@gmail.com",
   // Ubicación (Name/Address/Phone consistente para SEO local)
   address: {
-    street: "Carlos Pellegrini 1022",
-    neighborhood: "Acassuso",
-    locality: "San Isidro",
+    street: "Salvador Debenedetti 2781",
+    neighborhood: "Olivos",
+    locality: "Vicente López",
     region: "Provincia de Buenos Aires",
     regionCode: "B",
-    postalCode: "B1641",
+    postalCode: "B1636",
     country: "Argentina",
     countryCode: "AR",
   },
-  // Coordenadas aproximadas de Carlos Pellegrini 1022, Acassuso.
-  // TODO: verificá las coordenadas exactas en Google Maps antes de publicar.
-  geo: { lat: -34.4869, lng: -58.5036 },
-  mapsUrl: "https://maps.app.goo.gl/MB1Edyp2ozCA3wLG7",
+  // Coordenadas de Salvador Debenedetti 2781, Olivos.
+  geo: { lat: -34.506765, lng: -58.508718 },
+  mapsUrl: "https://www.google.com/maps/place/Salvador+Debenedetti+2781,+C1636+Buenos+Aires,+Provincia+de+Buenos+Aires/@-34.5067646,-58.5087176,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb0e27ffcfce5:0xf0d9a408694dba2e!8m2!3d-34.5067646!4d-58.5087176!16s%2Fg%2F11t9qhk6c1",
   mapsEmbed:
-    "https://www.google.com/maps?q=Carlos+Pellegrini+1022+Acassuso+San+Isidro&output=embed",
+    "https://www.google.com/maps?q=Salvador+Debenedetti+2781+Olivos+Vicente+Lopez&output=embed",
   areaServed: [
     "Acassuso",
     "San Isidro",
@@ -118,19 +117,19 @@ export const treatments: Treatment[] = [
     shortName: "Terapia Colónica",
     claim: "Liberá tu cuerpo desde adentro",
     metaDescription:
-      "Sesión descubrimiento de terapia colónica (hidroterapia de colon) en Acassuso, San Isidro. Tratamiento indoloro y seguro para desintoxicar, mejorar la digestión y recuperar energía. Pedí tu turno.",
+      "Sesión descubrimiento de terapia colónica (hidroterapia de colon) en Olivos, Vicente López. Tratamiento indoloro y seguro para desintoxicar, mejorar la digestión y recuperar energía. Pedí tu turno.",
     keywords: [
       "terapia colónica",
       "hidroterapia de colon",
-      "limpieza de colon Acassuso",
-      "hidroterapia colónica San Isidro",
+      "limpieza de colon Olivos",
+      "hidroterapia colónica Vicente López",
       "sesión descubrimiento colónica",
       "desintoxicación colon Zona Norte",
     ],
     image:
       "/terapia-colonica-sistema-digestivo.webp",
     imageAlt:
-      "Ilustración anatómica del sistema digestivo e intestinos para la terapia colónica en Rena.Ser, Acassuso",
+      "Ilustración anatómica del sistema digestivo e intestinos para la terapia colónica en Rena.Ser, Olivos",
     heroHeadline: "Terapia Colónica: tu primera sesión para sentirte liviano y con energía",
     highlights: [
       "Sesión ideal para experimentar la hidroterapia colónica por primera vez",
@@ -153,7 +152,7 @@ export const treatments: Treatment[] = [
     shortName: "Terapia Colónica Profunda",
     claim: "Una desintoxicación completa en 3 sesiones",
     metaDescription:
-      "Limpieza colónica profunda: paquete de 3 sesiones de hidroterapia de colon en Acassuso, San Isidro. Elimina toxinas acumuladas, mejora el tránsito intestinal y refuerza tus defensas. Consultá ahora.",
+      "Limpieza colónica profunda: paquete de 3 sesiones de hidroterapia de colon en Olivos, Vicente López. Elimina toxinas acumuladas, mejora el tránsito intestinal y refuerza tus defensas. Consultá ahora.",
     keywords: [
       "limpieza colónica profunda",
       "3 sesiones hidroterapia de colon",
@@ -198,7 +197,7 @@ export const treatments: Treatment[] = [
     shortName: "Limpieza Hepática",
     claim: "Un hígado sano es un cuerpo sin enfermedades",
     metaDescription:
-      "Limpieza hepática en Acassuso, San Isidro: programa de 10 días con 3 sesiones de hidroterapia colónica para eliminar cálculos biliares y toxinas. Más energía, mejor digestión y claridad mental.",
+      "Limpieza hepática en Olivos, Vicente López: programa de 10 días con 3 sesiones de hidroterapia colónica para eliminar cálculos biliares y toxinas. Más energía, mejor digestión y claridad mental.",
     keywords: [
       "limpieza hepática",
       "limpieza de hígado",
@@ -257,7 +256,7 @@ export const treatments: Treatment[] = [
     shortName: "Tratamiento Desparasitante",
     claim: "Desparasitación natural en 1 mes, sin efectos secundarios",
     metaDescription:
-      "Tratamiento desparasitante natural de 1 mes en Acassuso, San Isidro: terapia colónica + tinturas madre orgánicas y orientación alimentaria. Efectivo contra más de cien parásitos, sin efectos secundarios.",
+      "Tratamiento desparasitante natural de 1 mes en Olivos, Vicente López: terapia colónica + tinturas madre orgánicas y orientación alimentaria. Efectivo contra más de cien parásitos, sin efectos secundarios.",
     keywords: [
       "tratamiento desparasitante natural",
       "desparasitación con plantas",

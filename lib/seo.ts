@@ -3,7 +3,7 @@ import { getTreatment, type TreatmentSlug } from "./site";
 
 export function treatmentMetadata(slug: TreatmentSlug): Metadata {
   const t = getTreatment(slug)!;
-  const title = `${t.shortName} en Acassuso, San Isidro`;
+  const title = `${t.shortName} en Olivos, Vicente López`;
   const url = `/${t.slug}/`;
   return {
     title,

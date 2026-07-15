@@ -8,15 +8,15 @@ import { WhatsAppCta, CallCta } from "@/components/cta";
 export const metadata: Metadata = {
   title: "Tratamientos de Hidroterapia Colónica y Depurativos",
   description:
-    "Conocé todos los tratamientos de Rena.Ser en Acassuso, San Isidro: terapia colónica, limpieza colónica profunda, limpieza hepática, desparasitación natural y detox de luna llena. Pedí tu asesoría gratuita.",
+    "Conocé todos los tratamientos de Rena.Ser en Olivos, Vicente López: terapia colónica, limpieza colónica profunda, limpieza hepática, desparasitación natural y detox de luna llena. Pedí tu asesoría gratuita.",
   keywords: [
     "tratamientos hidroterapia colónica",
     "limpieza de colon",
     "limpieza hepática",
     "desparasitación natural",
     "detox",
-    "Acassuso",
-    "San Isidro",
+    "Olivos",
+    "Vicente López",
   ],
   alternates: { canonical: "/tratamientos/" },
   openGraph: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "/tratamientos/",
     title: "Tratamientos | Rena.Ser",
     description:
-      "Terapia colónica, limpieza hepática, desparasitación natural y detox. Programas depurativos personalizados en Acassuso, Zona Norte.",
+      "Terapia colónica, limpieza hepática, desparasitación natural y detox. Programas depurativos personalizados en Olivos, Zona Norte.",
   },
 };
 

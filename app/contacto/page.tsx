@@ -11,12 +11,12 @@ import { MapPin, Mail, Phone } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Contacto y Turnos",
   description:
-    "Pedí tu turno o consultá por la terapia colónica en Rena.Ser. Estamos en Carlos Pellegrini 1022, Acassuso (San Isidro), Zona Norte de Buenos Aires. WhatsApp, teléfono y email.",
+    "Pedí tu turno o consultá por la terapia colónica en Rena.Ser. Estamos en Salvador Debenedetti 2781, Olivos (Vicente López), Zona Norte de Buenos Aires. WhatsApp, teléfono y email.",
   keywords: [
     "contacto Rena.Ser",
     "turnos terapia colónica",
-    "hidroterapia colónica Acassuso",
-    "hidroterapia colónica San Isidro",
+    "hidroterapia colónica Olivos",
+    "hidroterapia colónica Vicente López",
     "consultorio Zona Norte",
   ],
   alternates: { canonical: "/contacto/" },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "/contacto/",
     title: "Contacto y Turnos | Rena.Ser",
     description:
-      "Pedí tu turno en Acassuso, San Isidro. Escribinos por WhatsApp y recibí una asesoría gratuita.",
+      "Pedí tu turno en Olivos, Vicente López. Escribinos por WhatsApp y recibí una asesoría gratuita.",
   },
 };
 

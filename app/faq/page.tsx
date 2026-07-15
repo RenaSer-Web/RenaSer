@@ -9,7 +9,7 @@ import { ChevronDown } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Preguntas Frecuentes sobre la Terapia Colónica",
   description:
-    "Resolvemos las dudas más comunes sobre la hidroterapia colónica: si duele, contraindicaciones, cuánto dura, preparación previa, material descartable y más. Centro Rena.Ser, Acassuso, San Isidro.",
+    "Resolvemos las dudas más comunes sobre la hidroterapia colónica: si duele, contraindicaciones, cuánto dura, preparación previa, material descartable y más. Centro Rena.Ser, Olivos, Vicente López.",
   keywords: [
     "preguntas frecuentes terapia colónica",
     "hidroterapia colónica duele",

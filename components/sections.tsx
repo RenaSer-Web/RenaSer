@@ -70,7 +70,7 @@ export function MapEmbed({ url }: { url: string }) {
     <div className="h-full min-h-[280px] overflow-hidden rounded-[var(--radius-xl2)] border border-[var(--color-line)] shadow-[var(--shadow-soft)]">
       <iframe
         src={url}
-        title="Ubicación de Rena.Ser en Acassuso, San Isidro"
+        title="Ubicación de Rena.Ser en Olivos, Vicente López"
         className="h-full w-full"
         style={{ minHeight: 280, border: 0 }}
         loading="lazy"
